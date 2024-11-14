@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+
+    <title>Compétences</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Sami</a> 
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="competences.html" class="active">Compétences</a> 
+            <a href="parcours.html">Parcours</a>
+            <a href="experiences.html">Expériences</a>
+            <a href="https://twitter.com/VotreNomDUtilisateur" target="_blank">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="competences">
+        <h1>Mes Compétences</h1>
+        <p>Voici un aperçu des compétences que j'ai développées :</p>
+
+        <div class="competence-list">
+            <div class="competence-item">
+                <h3>Développement Web</h3>
+                <p>HTML, CSS, JavaScript, etc.</p>
+            </div>
+            <div class="competence-item">
+                <h3>Programmation</h3>
+                <p>Python, Java, C++, etc.</p>
+            </div>
+            <div class="competence-item">
+                <h3>Sécurité Informatique</h3>
+                <p>Pentesting, analyse de vulnérabilités, etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sami. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
