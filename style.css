@@ -59,7 +59,20 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
 nav a.active {
   color: #b74b4b;
   border-bottom: 3px solid #b74b4b;
@@ -196,16 +209,20 @@ span {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .typing-text span {
   position: relative;
+  display: inline-block;
+  color: #b74b4b;
 }
 
 .typing-text span::before {
   content: "Pentester";
-  color: #b74b4b;
-  animation: words 20s infinite;
+  animation: words 30s infinite;
 }
 
 .typing-text span::after {
@@ -220,21 +237,26 @@ span {
 }
 
 @keyframes cursor {
-  to {
+  0%, 50% {
+    border-left: 3px solid transparent;
+}
+100% {
     border-left: 3px solid #b74b4b;
-  }
+}
 }
 
 @keyframes words {
 
-  0%,
-  50% {
-    content: "Developpeur web";
+  0%, 33% {
+    content: "Pentester";
   }
 
-  51%,
-  100% {
+  34%, 66% {
     content: "Designer web";
+  }
+
+  67%, 100% {
+    content: "Développeur Web";
   }
 }
 
@@ -273,21 +295,19 @@ footer {
   font-size: 14px;
 }
 
-
-
-/* Styles pour la section Compétences */
 .competences {
-  padding: 5rem 9%; /* Ajoute un espace autour de la section */
-  background-color: #161616; /* Couleur de fond de la section */
-  color: white; /* Couleur du texte */
+  padding: 5rem 9%; 
+  background-color: #161616; 
+  color: white; 
   text-align: center;
 }
 
 .competences h1 {
   font-size: 3rem;
   font-weight: 700;
+  margin-top: 4rem;
   margin-bottom: 2rem;
-  color: #b74b4b; /* Couleur de l'en-tête */
+  color: #b74b4b; 
 }
 
 .competences p {
@@ -298,7 +318,7 @@ footer {
 .competence-list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Pour que les compétences se replient si l'écran est trop petit */
+  flex-wrap: wrap; 
 }
 
 .competence-item {
@@ -323,6 +343,6 @@ footer {
 }
 
 .competence-item:hover {
-  transform: translateY(-10px); /* L'effet de survol pour les compétences */
+  transform: translateY(-10px); 
 }
 

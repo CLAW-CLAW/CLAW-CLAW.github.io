@@ -13,11 +13,11 @@
       <a href="#" class="logo">Sami</a>
 
         <nav>
-            <a href="#index.html" class="Active">Home</a>
-            <a href="services.html">Services</a>
-            <a href="competences.html" class="active">Compétences</a>
-            <a href="parcours.html">Parcours</a>
-            <a href="experiences.html">Expériences</a>
+            <a href="index.html" id="home-link">Home</a>
+            <a href="services.html" id="services-link">Services</a>
+            <a href="competences.html" id="competences-link">Compétences</a>
+            <a href="parcours.html" id="parcours-link">Parcours</a>
+            <a href="experiences.html" id="experiences-link">Expériences</a>
             <a href="http://x.com/ClowClaw" target="_blank" rel="noopener noreferrer">Contacts</a>
         </nav>
     </header>
@@ -43,7 +43,23 @@
     </footer>
 
     <script>
-        // JavaScript pour afficher l'année en cours automatiquement
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Liste des liens de la navigation avec leur identifiant correspondant
+    const links = {
+        "index.html": "home-link",
+        "services.html": "services-link",
+        "competences.html": "competences-link",
+        "parcours.html": "parcours-link",
+        "experiences.html": "experiences-link",
+        "contacts.html": "contacts-link"
+    };
+
+    // Vérifie si l'URL actuelle correspond à l'un des liens et ajoute la classe "active"
+    if (links[currentPage]) {
+        document.getElementById(links[currentPage]).classList.add("active");
+    }
+
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
