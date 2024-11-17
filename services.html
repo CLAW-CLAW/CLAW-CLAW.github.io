@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Portfolio Sami" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website - Services</title>
+</head>
+<body>
+
+    <header>
+      <a href="#" class="logo">Sami</a>
+      <nav>
+          <a href="index.html" id="home-link">Accueil</a>
+          <a href="services.html" id="services-link">Services</a>
+          <a href="competences.html" id="competences-link">Compétences</a>
+          <a href="parcours.html" id="parcours-link">Parcours</a>
+          <a href="experiences.html" id="experiences-link">Expériences</a>
+          <a href="http://x.com/ClowClaw" target="_blank" rel="noopener noreferrer">Contacts</a>
+      </nav>
+    </header>
+
+    <!-- Section des Services -->
+    <section class="services">
+        <h1>Mes Services</h1>
+        <p>Voici les services que je propose pour vous aider à créer des projets web simples et efficaces.</p>
+
+        <div class="service-list">
+            <div class="service-item">
+                <i class="fa-solid fa-code"></i>
+                <h3>Création de Sites Web</h3>
+                <p>Je crée des sites web simples et adaptés à vos besoins. Je m'assure qu'ils fonctionnent bien et qu'ils sont faciles à utiliser.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h3>Design Web</h3>
+                <p>Je fais en sorte que votre site soit joli et facile à naviguer, avec un design moderne et propre.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-bug"></i>
+                <h3>Sécurité Web</h3>
+                <p>Je teste les sites web pour trouver des failles avant les hackers, avec des attaques simulées comme le pentesting (test d'intrusion)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Sami. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Activer la classe active dans le menu en fonction de la page actuelle
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = {
+            "index.html": "home-link",
+            "services.html": "services-link",
+            "competences.html": "competences-link",
+            "parcours.html": "parcours-link",
+            "experiences.html": "experiences-link",
+            "contacts.html": "contacts-link"
+        };
+
+        if (links[currentPage]) {
+            document.getElementById(links[currentPage]).classList.add("active");
+        }
+
+        // Afficher l'année actuelle dans le footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

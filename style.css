@@ -55,7 +55,7 @@ nav a {
   color: white;
   margin-left: 4rem;
   font-weight: 500;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
   border-bottom: 3px solid transparent;
 }
 
@@ -155,7 +155,7 @@ span {
   border-radius: 50%;
   box-shadow: 0 0 25px solid #b74b4b;
   cursor: pointer;
-  transition: 0.2 linear;
+  transition: 0.2s linear;
 }
 
 .home-img img:hover {
@@ -194,7 +194,7 @@ span {
   letter-spacing: 0.3rem;
   font-weight: 600;
   border: 2px solid #b74b4b;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ span {
 
 .typing-text span::before {
   content: "Pentester";
-  animation: words 30s infinite;
+  animation: words 5s infinite;
 }
 
 .typing-text span::after {
@@ -346,3 +346,65 @@ footer {
   transform: translateY(-10px); 
 }
 
+/* Section Services */
+.services {
+  padding: 5rem 9%;
+  background-color: #161616;
+  color: white;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #b74b4b;
+}
+
+.services p {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 30%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.service-item i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #b74b4b;
+}
+
+.service-item h3 {
+  font-size: 2rem;
+  color: #b74b4b;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%;
+  }
+}

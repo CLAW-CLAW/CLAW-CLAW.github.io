@@ -2,10 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="Portfolio Sami" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sami, passionné d'informatique et en quête de nouvelles opportunités. Découvrez mes compétences et mon parcours dans le domaine du développement.">
+    <title>Portfolio Website</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
 
 </head>
 <body>
@@ -18,17 +20,19 @@
             <a href="competences.html" id="competences-link">Compétences</a>
             <a href="parcours.html" id="parcours-link">Parcours</a>
             <a href="experiences.html" id="experiences-link">Expériences</a>
-            <a href="http://x.com/ClowClaw" target="_blank" rel="noopener noreferrer">Contacts</a>
+            <a href="https://x.com/ClowClaw" target="_blank">Contacts</a>
         </nav>
     </header>
+
     <section class="home">
     <div class="home-img">
         <img src="main.jpg" alt="Portfolio">
     </div>
     <div class="home-content">
-        <h1>Hi, it's <span>Sami</span></h1>
+        <h1>Salut, c'est  <span>Sami</span></h1>
         <h3 class="typing-text">Je veux devenir <span></span></h3>
-        <p>Je m'appelle Sami et je suis passionné d'informatique depuis mon plus jeune âge, je commence à explorer le développement et la programmation, avec une envie d'apprendre et de créer des projets innovants. Curieux et motivé, je me perfectionne chaque jour pour progresser dans ce domaine <p>
+        <p>Je m'appelle Sami et je suis passionné d'informatique depuis mon plus jeune âge, je commence à explorer le développement et la programmation, avec une envie d'apprendre et de créer des projets innovants. Curieux et motivé, je me perfectionne chaque jour pour progresser dans ce domaine. <p>
+       
         <div class="social-icons">
             <a href="https://github.com/CLAW-CLAW" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://x.com/ClowClaw" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
@@ -44,8 +48,6 @@
 
     <script>
     const currentPage = window.location.pathname.split("/").pop();
-
-    // Liste des liens de la navigation avec leur identifiant correspondant
     const links = {
         "index.html": "home-link",
         "services.html": "services-link",
@@ -55,7 +57,6 @@
         "contacts.html": "contacts-link"
     };
 
-    // Vérifie si l'URL actuelle correspond à l'un des liens et ajoute la classe "active"
     if (links[currentPage]) {
         document.getElementById(links[currentPage]).classList.add("active");
     }
