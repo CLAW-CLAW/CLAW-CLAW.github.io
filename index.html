@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Sami, passionné d'informatique et en quête de nouvelles opportunités. Découvrez mes compétences et mon parcours dans le domaine du développement.">
-    <title>Portfolio Website</title>
+    <title>Accueil - Portfolio Sami</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
       <a href="#" class="logo">Sami</a>
 
         <nav>
-            <a href="index.html" id="home-link">Home</a>
+            <a href="index.html" id="home-link">Accueil</a>
             <a href="services.html" id="services-link">Services</a>
             <a href="competences.html" id="competences-link">Compétences</a>
             <a href="parcours.html" id="parcours-link">Parcours</a>
@@ -35,7 +35,7 @@
        
         <div class="social-icons">
             <a href="https://github.com/CLAW-CLAW" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/ClowClaw" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://x.com/ClowClaw" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <a href="#"class= "btn">Recrutez-moi en bac pro</a>       
@@ -47,23 +47,23 @@
     </footer>
 
     <script>
-    const currentPage = window.location.pathname.split("/").pop();
-    const links = {
-        "index.html": "home-link",
-        "services.html": "services-link",
-        "competences.html": "competences-link",
-        "parcours.html": "parcours-link",
-        "experiences.html": "experiences-link",
-        "contacts.html": "contacts-link"
-    };
+        // Récupérer tous les liens du menu
+        const menuLinks = document.querySelectorAll('nav a');
 
-    if (links[currentPage]) {
-        document.getElementById(links[currentPage]).classList.add("active");
-    }
+        // Fonction pour changer la couleur du lien actif
+        function setActiveLink() {
+            // Supprimer la classe "active" de tous les liens
+            menuLinks.forEach(link => link.classList.remove('active'));
 
-        document.getElementById('year').textContent = new Date().getFullYear();
+            // Ajouter la classe "active" au lien sur lequel l'utilisateur a cliqué
+            this.classList.add('active');
+        }
+
+        // Ajouter un événement click à chaque lien
+        menuLinks.forEach(link => {
+            link.addEventListener('click', setActiveLink);
+        });
     </script>
-
     
 </body>
 </html>
