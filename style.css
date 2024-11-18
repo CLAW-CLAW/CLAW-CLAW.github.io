@@ -450,14 +450,9 @@ footer {
   padding: 2rem;
   border-radius: 1rem;
   width: 30%;
+  margin-bottom: 2rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s;
-}
-
-.parcours-item i {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #b74b4b;
 }
 
 .parcours-item h3 {
@@ -595,3 +590,11 @@ nav a.active {
   color: #b74b4b; /* Couleur rouge pour le lien actif */
   border-bottom: 3px solid #b74b4b; /* Ajoute un soulignement rouge */
 }
+
+
+
+
+
+
+
+

@@ -11,12 +11,13 @@
     <header>
         <a href="#" class="logo">Sami</a>
         <nav>
-            <a href="index.html" id="home-link">Accueil</a>
-            <a href="services.html" id="services-link">Services</a>
-            <a href="competences.html" id="competences-link">Compétences</a>
-            <a href="parcours.html" id="parcours-link">Parcours</a>
-            <a href="experiences.html" id="experiences-link">Expériences</a>
-            <a href="http://x.com/ClowClaw" target="_blank" rel="noopener noreferrer">Contacts</a>
+            <a href="index.html">Accueil</a>
+            <a href="services.htmle">Services</a>
+            <a href="competences.html">Compétences</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="experiences.html">Expériences</a>
+            <a href="https://x.com/ClowClaw" target="_blank" rel="noopener noreferrer">Contacts</a>
+
         </nav>
     </header>
 
@@ -46,5 +47,24 @@
     <footer>
         <p>&copy; <span id="year"></span> Sami. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        // Script JavaScript pour définir le lien actif
+        const menuLinks = document.querySelectorAll('nav a');
+
+        function setActiveLink() {
+            const currentPage = window.location.pathname.split("/").pop();
+            menuLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        setActiveLink();
+    </script>
+
 </body>
 </html>
