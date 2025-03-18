@@ -298,7 +298,7 @@ footer {
 
 
 
-/* Section Compétences */
+
 .competences {
   padding: 5rem 9%; 
   background-color: #161616; 
@@ -353,7 +353,6 @@ footer {
 
 
 
-/* Section Services */
 .services {
   padding: 5rem 9%;
   background-color: #161616;
@@ -418,7 +417,6 @@ footer {
 
 
 
-/* Parcours */
 .parcours {
   padding: 5rem 9%;
   background-color: #161616;
@@ -476,15 +474,14 @@ footer {
   }
 }
 
-/* Style pour le lien actif */
+
 nav a.active {
-  color: red; /* Choisis la couleur que tu veux */
-  font-weight: bold; /* Mettre le texte en gras */
+  color: red; 
+  font-weight: bold; 
 }
 
 
 
-/* Section Expériences - style similaire à Services */
 .experiences {
   padding: 5rem 9%;
   background-color: #161616;
@@ -501,20 +498,20 @@ nav a.active {
 }
 
 .experiences ul {
-  list-style-type: none; /* Supprime les puces par défaut */
-  padding: 0; /* Retire le padding par défaut */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 .experiences li {
-  font-size: 1.6rem; /* Taille du texte des éléments de la liste */
-  line-height: 1.8; /* Hauteur de ligne pour lisibilité */
-  margin-bottom: 2rem; /* Espace entre les éléments de la liste */
-  text-align: left; /* Aligne le texte à gauche */
-  color: #eee; /* Couleur du texte */
+  font-size: 1.6rem; 
+  line-height: 1.8; 
+  margin-bottom: 2rem; 
+  text-align: left; 
+  color: #eee; 
 }
 
 .experiences li strong {
-  color: #b74b4b; /* Couleur rouge pour les titres des éléments */
+  color: #b74b4b; 
 }
 
 .experiences p {
@@ -553,7 +550,6 @@ nav a.active {
   transform: translateY(-10px);
 }
 
-/* Footer */
 footer {
   background-color: #222;
   color: #ccc;
@@ -562,7 +558,6 @@ footer {
   font-size: 1.4rem;
 }
 
-/* Responsive styles pour mobile */
 @media (max-width: 768px) {
   .experiences-list {
       flex-direction: column;
@@ -575,20 +570,19 @@ footer {
 }
 
 
-/* Styles de base pour les liens dans le menu de navigation */
 nav a {
   font-size: 1.8rem;
-  color: white; /* Couleur par défaut des liens */
+  color: white; 
   margin-left: 4rem;
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
 }
 
-/* Styles pour le lien actif */
+
 nav a.active {
-  color: #b74b4b; /* Couleur rouge pour le lien actif */
-  border-bottom: 3px solid #b74b4b; /* Ajoute un soulignement rouge */
+  color: #b74b4b; 
+  border-bottom: 3px solid #b74b4b; 
 }
 
 
